@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Delta.Iris.ReproduceCloneBug</Name>
+  <AddInID>{1f951787-452f-4ccd-8e77-e5f13ee43239}</AddInID>
+  <Description>Reproduces the "clone" bug: Every asset creation results in a newly cloned asset, which doesn't get stored.</Description>
+  <Version>1.0</Version>
+  <Image>Images\Delta.Iris.ReproduceCloneBug.png</Image>
+  <Author>Thijs Brobbel</Author>
+  <Company>Delta</Company>
+  <Date>17-7-2013</Date>
+  <Targets>
+    <Target name="Desktop" version="10.0" />
+  </Targets>
+  <AddIn language="CLR" library="Delta.Iris.ReproduceCloneBug.dll" namespace="Delta.Iris.ReproduceCloneBug">
+    <ArcMap>
+      <Extensions>
+        <Extension id="Delta_Iris_ReproduceCloneBugExtension" class="ReproduceCloneBugExtension" productName="Reproduce Clone Bug Extension" showInExtensionDialog="true" autoLoad="true" />
+      </Extensions>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
